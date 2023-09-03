@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>FlaskApp</title>
+    </head>
+    <body>
+        <h1 align='center'>US Flight Data Analysis 2019</h1>
+        <br>
+        <form method="get" action="{{ url_for('num_flights_by_day_of_week') }}" align="center">
+            <button type="submit">Number of Flights delayed by Day of the Week</button>
+        </form>
+        <br>
+        <form method="get" action="{{ url_for('avg_distance_by_airline') }}" align="center">
+            <button type="submit">Average Distance covered by Airlines</button>
+        </form>
+        <br>
+        <form method="get" action="{{ url_for('num_flights_by_month_and_dest_state') }}" align="center">
+            <button type="submit">Number of flights operated by Month and Destination State</button>
+        </form>
+        <br>
+        <form method="get" action="{{ url_for('num_delayed_flights_by_airline_and_month') }}" align="center">
+            <button type="submit">Number Delayed Flights by Airline and Month</button>
+        </form>
+        <br>
+        <form method="get" action="{{ url_for('avg_taxi_out_time_by_airline_and_month') }}" align="center">
+            <button type="submit">Average Taxi out time by Airline and Month</button>
+        </form>
+    </body>
+</html>
